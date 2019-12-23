@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="queryForm">
+		支社<input id="supportbranchnm" name="supportbranchnm"><br>
+		部门<input id="productsectnm" name="productsectnm"><br>
+		オーダ<input id="ordercd" name="ordercd"><br>
+		客户<input id="customername" name="customername"><br>
+	</form>
+	<button id="selectBtn">检索</button>
+	<table border="1" >
+		<thead>
+			<tr>
+				<th>案件番号</th>
+				<th>支社</th>
+				<th>制造部门</th>
+				<th>プロセス</th>
+				<th>オーダ</th>
+				<th>工事名称</th>
+				<th>顾客</th>
+				<th>顾客区分</th>
+				<th>有无</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$("#selectBtn").click(function(){
+		$.ajax({
+			type:"get",
+			url:"prm",
+			data:$("#queryForm").serialize(),
+			success:function(data){
+				$("tbody").empty();
+				$.each(data,function(i,RiskManagement){
+					var tr = $("<tr>");
+					$("<td>").html(RiskManagement.projectno).appendTo(tr);
+					$("<td>").html(RiskManagement.supportbranchnm).appendTo(tr);
+					$("<td>").html(RiskManagement.productsectnm).appendTo(tr);
+					$("<td>").html(RiskManagement.processno).appendTo(tr);
+					$("<td>").html(RiskManagement.ordercd).appendTo(tr);
+					$("<td>").html(RiskManagement.projectnametemp).appendTo(tr);
+					$("<td>").html(RiskManagement.customername).appendTo(tr);
+					$("<td>").html(RiskManagement.customertypeno).appendTo(tr);
+					$("<td>").html(RiskManagement.branchtransactionflg).appendTo(tr);
+					$("tbody").append(tr);
+				})
+			}
+		})
+	})
+</script>
+</html>

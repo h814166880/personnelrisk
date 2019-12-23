@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#div1{
+		position:absolute;
+		width: 520px;
+		left: 800px;
+	}
+	#div2{
+		position:absolute;
+		width: 370px;
+		background-color: yellow;
+	}
+	#div3{
+		position: absolute;
+		width: 370px;
+		background-color: pink;
+	}
+</style>
+</head>
+<body>
+	<h2>基本情报</h2>
+	<div id="div1">
+		<table border="1px" cellspacing="0px" cellpadding="0px">
+		<tr>
+			<td>起票者</td>
+			<td><input type="text"></td>
+			<td>最终更新者</td>
+			<td><input type="text"></td>
+		</tr>
+	</table>
+	</div>
+	<h1>1.オーダ情報</h1>
+	<table border="1px" cellspacing="0px" cellpadding="0px">
+		<tr>
+			<td>案件番号</td>
+			<td colspan="3"><input type="text"></td>
+		</tr>
+		<tr>
+			<td>プロセス</td>
+			<td colspan="3">
+				<input name="r1" type="radio">*****
+				<input name="r1" type="radio">*****
+				<input name="r1" type="radio">*****
+				<input name="r1" type="radio">*****
+			</td>
+		</tr>
+		<tr>
+			<td>工事名称（仮）</td>
+			<td colspan="3"><input type="text"></td>
+		</tr>
+		<tr>
+			<td>顧客</td>
+			<td colspan="3"><input type="text"></td>
+		</tr>
+		<tr>
+			<td>オーダ</td>
+			<td><input type="text"></td>
+			<td>*****</td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td>顧客区分</td>
+			<td colspan="3">
+				<input type="radio">*****
+				<input type="radio">*****
+				<input type="radio">*****
+				<input type="radio">*****
+				<input type="radio">*****
+			</td>
+		</tr>
+		<tr>
+			<td>製造部門</td>
+			<td><input type="text"></td>
+			<td>*****</td>
+			<td><input type="text"></td>
+		</tr>
+	</table>
+	<h1>2.支社间取引</h1>
+	<table border="1px" cellspacing="0px" cellpadding="0px">
+		<tr>
+			<td>支社间取引的有无</td>
+			<td>
+				<input type="radio">*****
+				<input type="radio">*****<br>
+				<input type="radio">*****
+				<input type="radio">*****
+			</td>
+		</tr>
+		<tr>
+			<td>支援支社</td>
+			<td><input type="text"></td>
+		</tr>
+	</table>
+	<h1>3.リスク管理情報</h1>
+	<table border="1px" cellspacing="0px" cellpadding="0px">
+		<tr>
+			<td>支社品質管理責任者</td>
+			<td><input type="text"> </td>
+		</tr>
+		<tr>
+			<td>部品質管理責任者</td>
+			<td><input type="text"> </td>
+		</tr>
+		<tr>
+			<td>グループ品質管理責任者</td>
+			<td><input type="text"> </td>
+		</tr>
+		<tr>
+			<td>プロジェクト品質管理責任者</td>
+			<td><input type="text"> </td>
+		</tr>
+		<tr>
+			<td>リスク予防管理責任者</td>
+			<td><input type="text"> </td>
+		</tr>
+		<tr>
+			<td>リスク予防管理対象</td>
+			<td>
+				<input type="checkbox">500万以上<br>
+				<input type="checkbox">初品 <input type="text">
+				理由:<input type="text"><br>
+				<input type="checkbox">特殊 <input type="text">
+				理由:<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>リスク予防管理区分</td>
+			<td>
+				<input type="radio">**************************************<br>
+				<input type="radio">**************************************
+			</td>
+		</tr>
+	</table>
+	<table border="1px" cellspacing="0px" cellpadding="0px">
+		<tr>
+			<td>添付ファイル</td>
+			<td><input type="text"><button>参照</button> <button>追加</button></td>
+		</tr>
+		<tr>
+			<td>案件タイプ</td>
+			<td>
+				<input type="radio">**** <input type="radio">****<br>
+				<input type="radio">**** <input type="radio">****<br>
+				<input type="radio">**** <input type="radio">****<br>
+				<input type="radio">**** <input type="radio">****
+			</td>
+		</tr>
+	</table>
+	<h1>4.リスク予防管理活动</h1>
+	<div id="div2">
+		<table border="1px" cellspacing="0px" cellpadding="0px">
+			<tr>
+				<td>*****</td>
+				<td colspan="2">*****</td>
+				<td>不要</td>
+				<td>完了</td>
+			</tr>
+			<tr>
+				<td rowspan="2">*****</td>
+				<td>*****</td>
+				<td><input type="text"><button>参照</button> </td>
+				<td rowspan="2" ><input type="checkbox"> </td>
+				<td rowspan="2" ><input type="checkbox"> </td>
+			</tr>
+			<tr>
+				<td>*****</td>
+				<td><input type="text"><button>参照</button> </td>
+			</tr>
+			<tr>
+				<td rowspan="2">*****</td>
+				<td>*****</td>
+				<td><input type="text"><button>参照</button> </td>
+				<td rowspan="2" ><input type="checkbox" name="name2"> </td>
+				<td rowspan="2" ><input type="checkbox" name="name2"> </td>
+			</tr>
+			<tr>
+				<td>*****</td>
+				<td><input type="text"><button>参照</button> </td>
+			</tr>
+			<tr>
+				<td rowspan="2">*****</td>
+				<td>*****</td>
+				<td><input type="text"><button>参照</button> </td>
+				<td rowspan="2" ><input type="checkbox" name="name3"> </td>
+				<td rowspan="2" ><input type="checkbox" name="name3"> </td>
+			</tr>
+			<tr>
+				<td>*****</td>
+				<td><input type="text"><button>参照</button> </td>
+			</tr>
+			<tr>
+				<td rowspan="2">*****</td>
+				<td>*****</td>
+				<td><input type="text"><button>参照</button> </td>
+				<td rowspan="2" ><input type="checkbox" name="name4"> </td>
+				<td rowspan="2" ><input type="checkbox" name="name4"> </td>
+			</tr>
+			<tr>
+				<td>*****</td>
+				<td><input type="text"><button>参照</button> </td>
+			</tr>
+		</table>
+	</div>
+	<div id="div3">
+		<table border="1px" cellspacing="0px" cellpadding="0px">
+			<tr>
+				<td>回</td>
+				<td>开催日</td>
+				<td>记事录</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
